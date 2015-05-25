@@ -16,7 +16,7 @@ void setup() {
 
 void draw() {
   background(sky());
-  fill(255);
+  fill(textColor());
   textSize(32);
   textAlign(RIGHT);
   textFont(meiryo);
@@ -56,15 +56,25 @@ color sky() {
     return color(10, 0, 50);
   }
   else if (hour() >= 5 && hour() <= 10) {
-    return (color(150, 200, 230));
+    return (color(210, 230, 255));
   }
   else if (hour() >= 11 && hour() <= 16) {
-    return (color(210, 230, 255));
+    return (color(150, 200, 230));
   }
   else if (hour() == 17 || hour() == 18) {
     return (color(230, 150, 100));
   } else {
     return (color(0,0,0));
+  }
+}
+
+color textColor() {
+  //夜
+  if (hour() <= 4 || hour() >= 19) {
+    return color(255);
+  }
+  else {
+    return (color(0));
   }
 }
 
