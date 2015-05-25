@@ -1,4 +1,5 @@
-class Tree {
+//このタブは現在未使用。今後書き換える予定。
+/*class Tree {
   int h;
   int posX, posY;
   int sizeX;
@@ -15,4 +16,4 @@ class Tree {
     fill(100, 60, 0);
     rect(posX, posY, sizeX, h);
   }
-}
+}*/
