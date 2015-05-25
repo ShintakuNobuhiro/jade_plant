@@ -4,15 +4,22 @@ readme
 【起動方法】
 フォルダ「jade_plant」内にpdeファイルを置いてからProcessing 1.5.1で起動してください。
 
+【GitからZIPをダウンロードした方へ】
 (Windows 7以降の方)
 MeiryoUIを32ptで「MeiryoUI.vlw」という名前でCreate FontしてからRunしてください。
-
 (それ以外の方)
 適当な日本語ファイルを32ptでCreate Fontしてから
 PFont meiryo = loadFont("ファイル名.vlw");
 に適宜書き換えてください。
 
 【リリースノート】
+・Readme変更
+説明一部変更
+
+・text色変更、背景色をブラッシュアップ
+朝と昼の背景色を入れ替え
+暗い背景の夜は白文字、それ以外の明るい背景の時間は黒文字に。
+
 ・Readme
 Readmeファイル(このファイルの作成)
 
